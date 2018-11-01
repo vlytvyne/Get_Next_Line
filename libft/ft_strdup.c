@@ -23,7 +23,7 @@ char	*ft_strdup(const char *src)
 	size = (int)ft_strlen(src) + 1;
 	if (!(dup = (char*)malloc(sizeof(char) * size)))
 		return (0);
-	while (i < size)
+	while (src[i])
 	{
 		dup[i] = src[i];
 		i++;
